@@ -33,7 +33,7 @@ void denied()
 {
 	system("clear");
 	printf(RED);
-	fprint("denied.txt");
+	fprint("art/denied.txt");
 	sleep(2);
 }
 
@@ -42,7 +42,7 @@ void granted()
 {
 	system("clear");
 	printf(GREEN);
-	fprint("granted.txt");
+	fprint("art/granted.txt");
 	sleep(2);
 }
 
@@ -51,7 +51,7 @@ void promptPin()
 {
 	system("clear");
 	printf(RESET);
-	fprint("mainframe.txt");
+	fprint("art/mainframe.txt");
 	printf("Please enter pin: ");
 }
 
