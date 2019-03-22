@@ -71,8 +71,12 @@ Status isPin(char *input)
 	return !strcmp(pswd, input) ? GRANTED : DENIED;
 }
 
-int main(void)
+int main(int argc, char *args[])
 {
+	if (argc > 1){ //non-default password
+		pswd = args[1];
+	}
+
 	while (!feof(stdin)){
 		promptPin();
 		readPin();
