@@ -44,6 +44,7 @@ void granted()
 	printf(GREEN);
 	fprint("art/granted.txt");
 	sleep(2);
+	getchar();//pause until enter is pressed
 }
 
 //prompt user to enter pin
@@ -77,6 +78,7 @@ int main(int argc, char *args[])
 		pswd = args[1];
 	}
 
+	//main loop
 	while (!feof(stdin)){
 		promptPin();
 		readPin();
